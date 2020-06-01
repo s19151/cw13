@@ -107,6 +107,8 @@ namespace Cwiczenia13.Models
                 builder.Property(zw => zw.Ilosc).IsRequired();
                 builder.Property(zw => zw.Uwagi).HasMaxLength(300);
             });
+
+            modelBuilder.Seed();
         }
     }
 }
