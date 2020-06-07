@@ -23,6 +23,8 @@ namespace Cwiczenia13.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            base.OnConfiguring(optionsBuilder);
+
             optionsBuilder.UseSqlServer("Data Source=db-mssql;Initial Catalog=s19151;Integrated Security=True");
         }
 
